@@ -123,6 +123,15 @@
   /* background-color: aqua; */
 }
 
-Card{
-  margin: 2rem
+.MuiCard-root{
+  margin: 2rem;
+  width: 20rem;
+  text-align: center;
 }
+
+.MuiCardActions-spacing{
+  display: flex;
+  justify-content: center;
+  align-items: baseline ;
+}
+
