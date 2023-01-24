@@ -2,8 +2,12 @@ import "../home.css";
 import Photo from "../images/ProfilePhoto.png"
 import golfSwing from "../images/RamonSwing.jpeg"
 import ProjectsBG from "../images/AbstractBG.jpeg"
+import { useLoaderData } from "react-router-dom";
+import MediaCard from "../components/MediaCard";
 
 export default function Home(props) {
+const projects = useLoaderData()
+
   return (
     <section>
         <section className="home-body">
@@ -28,7 +32,10 @@ export default function Home(props) {
             <section className="flex">
                 <h3>Projects</h3>
                 <section class="projIndex">
-                    <section className="projectCard"></section>
+                  {projects.map((project) => (
+                    <MediaCard project={project}/>
+                  ))}
+                    
                 </section>
             </section>
           </section>
