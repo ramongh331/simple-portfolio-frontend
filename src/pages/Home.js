@@ -3,7 +3,7 @@ import Photo from "../images/ProfilePhoto.png"
 import golfSwing from "../images/RamonSwing.jpeg"
 import ProjectsBG from "../images/AbstractBG.jpeg"
 import { useLoaderData } from "react-router-dom";
-import MediaCard from "../components/MediaCard";
+import Technology from "../components/Technology";
 
 export default function Home(props) {
 const projects = useLoaderData()
@@ -31,9 +31,14 @@ const projects = useLoaderData()
             <img src={ProjectsBG} alt="abstract design for background"/>
             <section className="flex">
                 <h3>Projects</h3>
-                <section class="projIndex">
+                <section className="projIndex">
                   {projects.map((project) => (
-                    <MediaCard project={project}/>
+                    <section className="">
+                      <img src={project.image} alt={project.name}/>
+                      <h4>{project.name}</h4>
+                      <Technology project={project.technology}/>
+                    </section>
+                    
                   ))}
                     
                 </section>
