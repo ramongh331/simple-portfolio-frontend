@@ -3,9 +3,13 @@
   color: white;
 } */
 
+/* ------------------------------ */
+/* -----------Home Page---------- */
+/* ------------------------------ */
 .home-body {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5rem;
   height: 100vh;
 }
 
@@ -55,6 +59,9 @@
   bottom: 1.5rem;
 }
 
+/* ------------------------------ */
+/* -----------About Page--------- */
+/* ------------------------------ */
 .about {
   height: 100vh;
   background-color: rgb(51, 65, 85);
@@ -76,22 +83,25 @@
   top: 4%;
   left: 2%;
   box-sizing: border-box;
-  border: 40px solid rgb(195,199,211);
+  border: 40px solid rgb(195, 199, 211);
   text-align: left;
   padding: 3rem 8rem;
   color: white;
 }
 
-.innerRect h3{
-    font-size: 80px;
-    margin-top: 0;
+.innerRect h3 {
+  font-size: 80px;
+  margin-top: 0;
 }
 
-.innerRect p{
-    font-size: 36px;
+.innerRect p {
+  font-size: 36px;
 }
 
-.skillsPage{
+/* ------------------------------ */
+/* ---------Skills Page---------- */
+/* ------------------------------ */
+.skillsPage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,68 +109,143 @@
   /* height: 100vh; */
 }
 
-.skillsContainer{
+/* -----Shades Top Banner-------- */
+
+.topShadesContainer {
+  width: 100%;
+  height: 25vh;
+}
+
+.shadeLine {
+  position: relative;
+  width: 100%;
+  height: 14.3%;
+  box-shadow: 0px 4px 4px 0 rgb(0, 0, 0, 0.4);
+}
+
+.t-white {
+  background-color: white;
+  z-index: 1;
+}
+.t-blue2 {
+  background-color: rgb(215, 231, 255);
+  z-index: 2;
+}
+.t-blue3 {
+  background-color: rgb(157, 191, 241);
+  z-index: 3;
+}
+.t-blue4 {
+  background-color: rgb(135, 166, 211);
+  z-index: 4;
+}
+.t-blue5 {
+  background-color: rgb(111, 138, 176);
+  z-index: 5;
+}
+.t-blue6 {
+  background-color: rgb(80, 101, 130);
+  z-index: 6;
+}
+.t-blue7 {
+  background-color: rgb(65, 82, 107);
+  z-index: 7;
+}
+
+/* -----Shades Bottom Banner----- */
+
+.bottomShadesContainer {
+  width: 100%;
+  height: 25vh;
+}
+.b-white {
+  background-color: white;
+  z-index: 7;
+}
+.b-blue2 {
+  background-color: rgb(215, 231, 255);
+  z-index: 6;
+}
+.b-blue3 {
+  background-color: rgb(157, 191, 241);
+  z-index: 5;
+}
+.b-blue4 {
+  background-color: rgb(135, 166, 211);
+  z-index: 4;
+}
+.b-blue5 {
+  background-color: rgb(111, 138, 176);
+  z-index: 3;
+}
+.b-blue6 {
+  background-color: rgb(80, 101, 130);
+  z-index: 2;
+}
+.b-blue7 {
+  background-color: rgb(65, 82, 107);
+  z-index: 1;
+}
+
+.skillsContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skillsContainer h3{
+.skillsContainer h3 {
   font-size: 80px;
   margin-top: 0;
   margin-bottom: 40px;
 }
 
-.skillCards{
+.skillCards {
   display: flex;
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
   width: 80%;
-
 }
 
-.skillCards div{
+.skillCards div {
   width: 120px;
   height: 150px;
-  margin: 5px
+  margin: 5px;
 }
 
-.skillCards > div > h4{
+.skillCards > div > h4 {
   width: 100%;
   margin: 10px 0;
 }
 
-.projects{
-    position: relative;
-    background-color: rgb(80,101,130);
-    width: 100%;
+/* ------------------------------ */
+/* ---------Projects Page-------- */
+/* ------------------------------ */
+.projects {
+  width: 100%;
+  background-color: rgb(26, 33, 43);
+  color: white;
+  height: fit-content;
 }
 
-.flex{
-    /* background-color: blue; */
-    width: 80%;
-    height: 100vh;
-    position: absolute;
-    z-index: 5;
-    top:0;
-    text-align: left;
-    left:10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.flex {
+  width: 80%;
+  z-index: 5;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto
 }
 
-.flex h3{
-    margin-top: 2rem;
-    font-size: 80px;
-    align-self: flex-start;
+.flex h3 {
+  margin-top: 2rem;
+  font-size: 80px;
+  align-self: flex-start;
 }
 
-
-
-.projIndex{
+.projIndex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -168,7 +253,7 @@
   /* background-color: aqua; */
 }
 
-.projectDiv{
+.projectDiv {
   /* background-color: aqua; */
   width: 95%;
   display: flex;
@@ -178,54 +263,61 @@
   position: relative;
 }
 
-.projectDiv .siteCover{
-width: 50rem;
-box-shadow: 0px 13px 15px -5px rgba(0,0,0,.5);
-border-radius: 10px;
+.projectDiv .siteCover {
+  width: 50rem;
+  box-shadow: 0px 13px 15px -5px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: .25s ease-in-out;
 }
 
-.projectInfo{
+.projectDiv .siteCover:hover{
+  transform: scale(1.05);
+}
+
+.projectInfo {
   text-align: right;
   position: absolute;
   width: 40rem;
-  right: 5rem
+  right: 5rem;
 }
 
-.projectInfo h4{
-  font-size: 22px;
+.projectInfo h4 {
+  font-size: 30px;
 }
 
-.description{
+.description {
   background-color: rgb(55, 55, 55);
   color: white;
   padding: 1rem;
   line-height: 1.5rem;
   font-size: 18px;
   text-align: left;
-  box-shadow: 0px 13px 15px -5px rgba(0,0,0,.5);
+  box-shadow: 0px 13px 15px -5px rgba(0, 0, 0, 0.7);
   border-radius: 5px;
 }
 
-img.ghBtn{
+img.ghBtn {
   width: 30px;
 }
 
-.techContainer{
+.techContainer {
   display: flex;
   justify-content: flex-end;
 }
 
-.techContainer div{
+.techContainer div {
   margin: 0 2px;
 }
-/* Icon scroll */
 
+/* ------------------------------ */
+/* ---------Icon Scroll---------- */
+/* ------------------------------ */
 .icon-scroll,
-.icon-scroll:before{
+.icon-scroll:before {
   position: absolute;
 }
 
-.icon-scroll{
+.icon-scroll {
   width: 40px;
   height: 70px;
   top: 85%;
@@ -237,8 +329,8 @@ img.ghBtn{
   border: 1px solid black;
 }
 
-.icon-scroll:before{
-  content: '';
+.icon-scroll:before {
+  content: "";
   width: 8px;
   height: 8px;
   background: black;
@@ -249,10 +341,14 @@ img.ghBtn{
   animation-iteration-count: infinite;
   animation-name: scroll;
 }
-@keyframes scroll{
-  0%
-    {opacity: 1}
-  100%
-    {opacity: 0;
-    transform: translateY(46px)}
+@keyframes scroll {
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+

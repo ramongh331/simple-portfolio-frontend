@@ -40,11 +40,15 @@ export default function Home(props) {
         </section>
       </section>
       <section className="skillsPage">
-        <img
-          className="skillsTopBanner"
-          src="https://i.imgur.com/9YiNhcs.png"
-          alt="skills top banner"
-        />
+        <div class="topShadesContainer">
+          <div class="shadeLine t-blue7"></div>
+          <div class="shadeLine t-blue6"></div>
+          <div class="shadeLine t-blue5"></div>
+          <div class="shadeLine t-blue4"></div>
+          <div class="shadeLine t-blue3"></div>
+          <div class="shadeLine t-blue2"></div>
+          <div class="shadeLine t-white"></div>
+        </div>
         <article className="skillsContainer">
           <h3>Technical Skills</h3>
           <div className="skillCards">
@@ -54,7 +58,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/4elB69O.png"
                 alt=""
               />
-                 <h4>HTML</h4>
+              <h4>HTML</h4>
             </div>
             <div>
               <img
@@ -62,7 +66,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/CXnA9Ug.png"
                 alt=""
               />
-                 <h4>CSS</h4>
+              <h4>CSS</h4>
             </div>
             <div>
               <img
@@ -70,7 +74,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/6scUcUd.png"
                 alt=""
               />
-                 <h4>JavaScript</h4>
+              <h4>JavaScript</h4>
             </div>
             <div>
               <img
@@ -78,7 +82,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/azFNmgK.png"
                 alt=""
               />
-                 <h4>React</h4>
+              <h4>React</h4>
             </div>
             <div>
               <img
@@ -86,7 +90,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/OWsGozd.png"
                 alt=""
               />
-                 <h4>Node.js</h4>
+              <h4>Node.js</h4>
             </div>
             <div>
               <img
@@ -94,7 +98,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/3f09g1V.png"
                 alt=""
               />
-                 <h4>Git</h4>
+              <h4>Git</h4>
             </div>
             <div>
               <img
@@ -102,7 +106,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/hniappf.png"
                 alt=""
               />
-                 <h4>Terminal</h4>
+              <h4>Terminal</h4>
             </div>
             <div>
               <img
@@ -110,7 +114,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/5FGlu1N.png"
                 alt=""
               />
-                 <h4>GitHub</h4>
+              <h4>GitHub</h4>
             </div>
             <div>
               <img
@@ -118,7 +122,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/iXHboNr.png"
                 alt=""
               />
-                 <h4>Figma</h4>
+              <h4>Figma</h4>
             </div>
             <div>
               <img
@@ -126,7 +130,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/SLNL36j.png"
                 alt=""
               />
-                 <h4>Tailwind CSS</h4>
+              <h4>Tailwind CSS</h4>
             </div>
             <div>
               <img
@@ -134,7 +138,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/wtKmNZS.png"
                 alt=""
               />
-                 <h4>Bootstrap</h4>
+              <h4>Bootstrap</h4>
             </div>
             <div>
               <img
@@ -142,7 +146,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/pNfwfro.png"
                 alt=""
               />
-                 <h4>Material UI</h4>
+              <h4>Material UI</h4>
             </div>
             <div>
               <img
@@ -150,7 +154,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/yZDIqeH.png"
                 alt=""
               />
-                 <h4>MongoDB</h4>
+              <h4>MongoDB</h4>
             </div>
             <div>
               <img
@@ -158,7 +162,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/edYh2Wb.png"
                 alt=""
               />
-                 <h4>PostgreSQL</h4>
+              <h4>PostgreSQL</h4>
             </div>
             <div>
               <img
@@ -166,7 +170,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/FbtibFp.png"
                 alt=""
               />
-                 <h4>Adobe Creative Cloud</h4>
+              <h4>Adobe Creative Cloud</h4>
             </div>
             <div>
               <img
@@ -174,7 +178,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/IIdu7oc.png"
                 alt="photoshop icon"
               />
-                 <h4>Adobe Photoshop</h4>
+              <h4>Adobe Photoshop</h4>
             </div>
             <div>
               <img
@@ -182,7 +186,7 @@ export default function Home(props) {
                 src="https://i.imgur.com/yVuYKcj.png"
                 alt="after effects icon"
               />
-                 <h4>Adobe After Effects</h4>
+              <h4>Adobe After Effects</h4>
             </div>
             <div>
               <img
@@ -190,31 +194,49 @@ export default function Home(props) {
                 src="https://i.imgur.com/caHF36e.png"
                 alt="premiere pro icon"
               />
-                 <h4>Adobe Premiere Pro</h4>
+              <h4>Adobe Premiere Pro</h4>
             </div>
-           </div>
+          </div>
         </article>
-        <img
-          className="skillsBottomBanner"
-          src="https://i.imgur.com/88B5hsA.png"
-          alt="skills bottom banner"
-        />
+        <div class="bottomShadesContainer">
+          <div class="shadeLine b-white"></div>
+          <div class="shadeLine b-blue2"></div>
+          <div class="shadeLine b-blue3"></div>
+          <div class="shadeLine b-blue4"></div>
+          <div class="shadeLine b-blue5"></div>
+          <div class="shadeLine b-blue6"></div>
+          <div class="shadeLine b-blue7"></div>
+        </div>
       </section>
       <section className="projects">
         <section className="flex">
           <h3>Projects</h3>
           <section className="projIndex">
-            {projects.map((project) => (
-              <section className="projectDiv">
-                <a href={project.url} target="_blank" rel="noreferrer"><img className="siteCover" src={project.image} alt={project.name} /></a>
-                <div className="projectInfo">
-                  <h4>{project.name}</h4>
-                  <Technology project={project.technology} />
-                  <p className="description">{project.description}</p>
-                  <a href={project.github} target="_blank" rel="noreferrer"><img className="ghBtn" src="https://i.imgur.com/5FGlu1N.png" alt=""/></a>
-                </div>
-              </section>
-            )).reverse()}
+            {projects
+              .map((project) => (
+                <section className="projectDiv">
+                  <a href={project.url} target="_blank" rel="noreferrer">
+                    <img
+                      className="siteCover"
+                      src={project.image}
+                      alt={project.name}
+                    />
+                  </a>
+                  <div className="projectInfo">
+                    <h4>{project.name}</h4>
+                    <Technology project={project.technology} />
+                    <p className="description">{project.description}</p>
+                    <a href={project.github} target="_blank" rel="noreferrer">
+                      <img
+                        className="ghBtn"
+                        src="https://i.imgur.com/5FGlu1N.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </section>
+              ))
+              .reverse()}
           </section>
         </section>
       </section>
