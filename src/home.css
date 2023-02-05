@@ -86,12 +86,50 @@
     font-size: 36px;
 }
 
-.projects{
-    height: 100vh;
-    position: relative;
+.skillsPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 100vh; */
 }
 
-.projects img{
+.skillsContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsContainer h3{
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.skillCards{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 80%;
+
+}
+
+.skillCards div{
+  width: 120px;
+  height: 150px;
+  margin: 5px
+}
+
+.skillCards > div > h4{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.projects{
+    position: relative;
+    background-color: rgb(80,101,130);
     width: 100%;
 }
 
@@ -115,23 +153,66 @@
     align-self: flex-start;
 }
 
+
+
 .projIndex{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   /* background-color: aqua; */
 }
 
-.MuiCard-root{
-  margin: 2rem;
-  width: 20rem;
-  text-align: center;
+.projectDiv{
+  /* background-color: aqua; */
+  width: 95%;
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.MuiCardActions-spacing{
-  display: flex;
-  justify-content: center;
-  align-items: baseline ;
+.projectDiv .siteCover{
+width: 50rem;
+box-shadow: 0px 13px 15px -5px rgba(0,0,0,.5);
+border-radius: 10px;
 }
+
+.projectInfo{
+  text-align: right;
+  position: absolute;
+  width: 40rem;
+  right: 5rem
+}
+
+.projectInfo h4{
+  font-size: 22px;
+}
+
+.description{
+  background-color: rgb(55, 55, 55);
+  color: white;
+  padding: 1rem;
+  line-height: 1.5rem;
+  font-size: 18px;
+  text-align: left;
+  box-shadow: 0px 13px 15px -5px rgba(0,0,0,.5);
+  border-radius: 5px;
+}
+
+img.ghBtn{
+  width: 30px;
+}
+
+.techContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.techContainer div{
+  margin: 0 2px;
+}
+
+
 

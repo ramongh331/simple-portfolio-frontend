@@ -7,7 +7,7 @@ const techArr = project
     return (
         <section className="techContainer">
              {techArr.map((tech) => (
-                <div>{tech}</div>
+                <div>{tech} |</div>
             ))}
         </section>
     )
