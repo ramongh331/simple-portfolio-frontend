@@ -9,6 +9,7 @@ export default function Home(props) {
 
   return (
     <section>
+      <div className="icon-scroll"></div>
       <section className="home-body">
         <section className="heading">
           <h2>Hi, I'm Ramon Hernandez</h2>
