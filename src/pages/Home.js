@@ -3,13 +3,14 @@ import Photo from "../images/ProfilePhoto.png";
 import golfSwing from "../images/RamonSwing.jpeg";
 import { useLoaderData } from "react-router-dom";
 import Technology from "../components/Technology";
+import { ContactUs } from "../components/Contact";
 
 export default function Home(props) {
   const projects = useLoaderData();
 
   return (
     <section>
-      <div className="icon-scroll"></div>
+      
       <section className="home-body">
         <section className="heading">
           <h2>Hi, I'm Ramon Hernandez</h2>
@@ -19,6 +20,7 @@ export default function Home(props) {
           <div className="bottomCircle"></div>
           <img src={Photo} alt="Ramon in White Nike hat and blue pullover" />
         </section>
+        <div className="icon-scroll"></div>
       </section>
       <section className="about">
         <img src={golfSwing} alt="Ramon swinging a golf club" />
@@ -40,14 +42,14 @@ export default function Home(props) {
         </section>
       </section>
       <section className="skillsPage">
-        <div class="topShadesContainer">
-          <div class="shadeLine t-blue7"></div>
-          <div class="shadeLine t-blue6"></div>
-          <div class="shadeLine t-blue5"></div>
-          <div class="shadeLine t-blue4"></div>
-          <div class="shadeLine t-blue3"></div>
-          <div class="shadeLine t-blue2"></div>
-          <div class="shadeLine t-white"></div>
+        <div className="topShadesContainer">
+          <div className="shadeLine t-blue7"></div>
+          <div className="shadeLine t-blue6"></div>
+          <div className="shadeLine t-blue5"></div>
+          <div className="shadeLine t-blue4"></div>
+          <div className="shadeLine t-blue3"></div>
+          <div className="shadeLine t-blue2"></div>
+          <div className="shadeLine t-white"></div>
         </div>
         <article className="skillsContainer">
           <h3>Technical Skills</h3>
@@ -198,14 +200,14 @@ export default function Home(props) {
             </div>
           </div>
         </article>
-        <div class="bottomShadesContainer">
-          <div class="shadeLine b-white"></div>
-          <div class="shadeLine b-blue2"></div>
-          <div class="shadeLine b-blue3"></div>
-          <div class="shadeLine b-blue4"></div>
-          <div class="shadeLine b-blue5"></div>
-          <div class="shadeLine b-blue6"></div>
-          <div class="shadeLine b-blue7"></div>
+        <div className="bottomShadesContainer">
+          <div className="shadeLine b-white"></div>
+          <div className="shadeLine b-blue2"></div>
+          <div className="shadeLine b-blue3"></div>
+          <div className="shadeLine b-blue4"></div>
+          <div className="shadeLine b-blue5"></div>
+          <div className="shadeLine b-blue6"></div>
+          <div className="shadeLine b-blue7"></div>
         </div>
       </section>
       <section className="projects">
@@ -239,6 +241,9 @@ export default function Home(props) {
               .reverse()}
           </section>
         </section>
+      </section>
+      <section className="contact">
+        <ContactUs/>
       </section>
     </section>
   );
