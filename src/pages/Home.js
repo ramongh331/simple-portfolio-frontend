@@ -10,7 +10,7 @@ export default function Home(props) {
   return (
     <section>
       
-      <section className="home-body">
+      <section className="home_body">
         <section className="heading">
           <h2>Hi, I'm Ramon Hernandez</h2>
         </section>

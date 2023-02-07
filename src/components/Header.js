@@ -11,7 +11,7 @@ export default function Header (props) {
                     <h2>Contact</h2>
                 </section>
             </section>
-            {/* <div className="underline"></div> */}
+            <div className="underline"></div>
         </section>
     )
 }

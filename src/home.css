@@ -1,15 +1,11 @@
-
-*{
-  outline: 3px solid gold;
-}
 body{
   width: 100vw;
 }
-/* ------------------------------
+/* ------------------------------ */
 /* -----------Home Page---------- */
 /* ------------------------------ */
-.home-body {
-  width: 100vw;
+.home_body {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 6rem;
