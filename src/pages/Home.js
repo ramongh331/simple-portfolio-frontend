@@ -5,7 +5,7 @@ import { ContactUs } from "../components/Contact";
 
 export default function Home(props) {
   const projects = useLoaderData();
-
+// ! REMEMBER: the larger images and divs are going to mess with your mobile layout. Keep that in mind when working on responsiveness. 
   return (
     <section>
       
@@ -206,7 +206,7 @@ export default function Home(props) {
           <div className="shadeLine b-blue7"></div>
         </div>
       </section>
-      {/* <section className="projects">
+      <section className="projects">
         <section className="flex">
           <h3>Projects</h3>
           <section className="projIndex">
@@ -240,7 +240,7 @@ export default function Home(props) {
       </section>
       <section className="contact">
         <ContactUs/>
-      </section> */}
+      </section>
     </section>
   );
 }
