@@ -24,15 +24,15 @@ code {
   width: 100%;
 }
 
-/* .nav .logo{
-margin-left: 15rem;
-} */
+.nav .logo{
+margin-left: 10%;
+}
 
 .nav-hyperlinks{
   display: flex;
   justify-content: space-between;
   width: 30rem;
-  /* margin-right: 15rem; */
+  margin-right: 10%;
 }
 
 .underline{
