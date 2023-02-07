@@ -1,5 +1,4 @@
 import "../home.css";
-import Photo from "../images/ProfilePhoto.png";
 import golfSwing from "../images/RamonSwing.jpeg";
 import { useLoaderData } from "react-router-dom";
 import Technology from "../components/Technology";
@@ -16,9 +15,7 @@ export default function Home(props) {
           <h2>Hi, I'm Ramon Hernandez</h2>
         </section>
         <section className="profile">
-          <div className="topCircle"></div>
-          <div className="bottomCircle"></div>
-          <img src={Photo} alt="Ramon in White Nike hat and blue pullover" />
+          <img className="home_image" src="https://i.imgur.com/QVW2YTb.jpg" alt="Ramon in White Nike hat and blue pullover" />
         </section>
         <div className="icon-scroll"></div>
       </section>

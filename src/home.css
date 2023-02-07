@@ -1,69 +1,49 @@
-/* body{
-  background-color: rgb(26, 33, 43);
-  color: white;
-} */
 
+body{
+  width: 100vw;
+}
 /* ------------------------------ */
 /* -----------Home Page---------- */
 /* ------------------------------ */
 .home-body {
+  width: 100vw;
   display: flex;
   justify-content: space-evenly;
   margin-top: 6rem;
   height: 83vh;
-  position: relative;
 }
 
 .heading {
-  margin-top: 10rem;
   width: 30rem;
 }
 
 .heading h2 {
   text-align: left;
-  font-size: 96px;
-  margin-top: 0;
+  font-size: 5vw;
+  margin-bottom: 0;
 }
 
 .profile {
-  /* background-color: aqua; */
-  width: 32rem;
-  height: 35rem;
+  max-width: 500px;
+  max-height: 400px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.1);
+
 }
 
-.profile img {
-  z-index: 5;
+.home_image {
+  width: 100%;
+  border: 2px solid black;
 }
 
-.topCircle {
-  width: 26rem;
-  height: 26rem;
-  border: 2px dashed black;
-  border-radius: 50%;
-  position: absolute;
-  left: 3.6rem;
-  bottom: 2.5rem;
-}
-
-.bottomCircle {
-  width: 24rem;
-  height: 24rem;
-  border: 1.5px dashed black;
-  border-radius: 50%;
-  position: absolute;
-  left: 3.6rem;
-  bottom: 1.5rem;
-}
 
 /* ------------------------------ */
 /* -----------About Page--------- */
 /* ------------------------------ */
 .about {
+  width:100%;
   height: 100vh;
   background-color: rgb(51, 65, 85);
   position: relative;
@@ -72,7 +52,7 @@
 .about img {
   position: absolute;
   right: 0;
-  height: 100vh;
+  height: 100%;
   opacity: 20%;
 }
 
