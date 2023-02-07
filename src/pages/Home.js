@@ -1,5 +1,4 @@
 import "../home.css";
-import golfSwing from "../images/RamonSwing.jpeg";
 import { useLoaderData } from "react-router-dom";
 import Technology from "../components/Technology";
 import { ContactUs } from "../components/Contact";
@@ -20,7 +19,7 @@ export default function Home(props) {
         <div className="icon-scroll"></div>
       </section>
       <section className="about">
-        <img src={golfSwing} alt="Ramon swinging a golf club" />
+        <img src="https://i.imgur.com/H9Xp25H.jpg" alt="Ramon swinging a golf club" />
         <section class="innerRect">
           <h3>About</h3>
           <p>
@@ -238,10 +237,10 @@ export default function Home(props) {
               .reverse()}
           </section>
         </section>
-      </section> */}
+      </section>
       <section className="contact">
         <ContactUs/>
-      </section>
+      </section> */}
     </section>
   );
 }

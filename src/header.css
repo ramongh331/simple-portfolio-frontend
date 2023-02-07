@@ -24,19 +24,19 @@ code {
   width: 100%;
 }
 
-.nav .logo{
+/* .nav .logo{
 margin-left: 15rem;
-}
+} */
 
 .nav-hyperlinks{
   display: flex;
   justify-content: space-between;
   width: 30rem;
-  margin-right: 15rem;
+  /* margin-right: 15rem; */
 }
 
 .underline{
   background-color: black;
-  width: 85rem; /* check back here when text sizing is set */
+  width: 85%; 
   height: 1px;
 }
