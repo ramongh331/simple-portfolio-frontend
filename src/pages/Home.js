@@ -207,7 +207,7 @@ export default function Home(props) {
           <div className="shadeLine b-blue7"></div>
         </div>
       </section>
-      <section className="projects">
+      {/* <section className="projects">
         <section className="flex">
           <h3>Projects</h3>
           <section className="projIndex">
@@ -238,7 +238,7 @@ export default function Home(props) {
               .reverse()}
           </section>
         </section>
-      </section>
+      </section> */}
       <section className="contact">
         <ContactUs/>
       </section>
