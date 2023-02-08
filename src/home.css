@@ -1,8 +1,27 @@
 /* Variables */
 :root{
-  --h3FontSize: 3.5vw;
+ 
   --darkestBlue: rgb(51, 65, 85);
-  --lightGray: rgb(195, 199, 211)
+  --lightGray: rgb(195, 199, 211);
+
+  --fs-h2: 6rem;
+  --fs-h3: 4.8rem;
+  --fs-p-about: 2rem;
+}
+
+@media screen and (max-width: 414px){
+  :root{
+    --fs-h2: 2.5rem;
+    --fs-h3: 1.5rem;
+    --fs-p-about: 1.1rem;
+  }
+}
+@media screen and (max-width: 280px){
+  :root{
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+    --fs-p-about: 1.1rem;
+  }
 }
 
 body{
@@ -25,7 +44,7 @@ body{
 
 .heading h2 {
   text-align: left;
-  font-size: 5vw;
+  font-size: var(--fs-h2);
   margin-bottom: 0;
 }
 
@@ -41,7 +60,6 @@ body{
 
 .home_image {
   width: 100%;
-  border: 2px solid black;
 }
 
 
@@ -77,12 +95,12 @@ body{
 }
 
 .innerRect h3 {
-  font-size: var(--h3FontSize);
+  font-size: var(--fs-h3);
   margin-top: 0;
 }
 
 .innerRect > p {
-  font-size: 30pt;
+  font-size: var(--fs-p-about);
   /* width: 100%;
   height: 80%; */
   /* background-color: aqua; */
@@ -440,9 +458,33 @@ width: 25rem;
 } 
 
 @media screen and (max-width: 414px){
+  /* Home Page */
+  .home_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0;
+    height: 93vh;
+  }
+  
+  .heading {
+    width: 14rem;
+  }
+  
+  .heading h2 {
+    text-align: center;
+    font-size: var(--fs-h2);
+    margin-bottom: 0;
+  }
+  
+  .home_image {
+    width: 84%;
+  }
+  
   /* About Page */
   .about {
-    height: 28vh;
+    height: 100vh;
   }
   
   .innerRect{
@@ -455,11 +497,27 @@ width: 25rem;
     color: white;
   }
 
-  .innerRect p{
+  /* .innerRect p{
     font-size: 10px
-  }
+  } */
 
-  
-  
-  
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 280px){
+    /* Home Page */
+    .home_body {
+      height: 93vh;
+    }
+    
+    .heading {
+      width: 14rem;
+      margin-bottom: 3em;
+    }
+    
+    .home_image {
+      width: 90%;
+    }
+
+    
 }

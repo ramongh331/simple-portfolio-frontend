@@ -6,7 +6,9 @@ export default function Header (props) {
             <section class="nav">
                 <h2 className="logo">RHz</h2>
                 <section className="nav-hyperlinks">
+                    <h2>Resume</h2>
                     <h2>About</h2>
+                    <h2>Skills</h2>
                     <h2>Projects</h2>
                     <h2>Contact</h2>
                 </section>
