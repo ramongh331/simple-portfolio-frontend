@@ -12,12 +12,17 @@ export default function Home(props) {
       <section className="home_body">
         <section className="heading">
           <h2>Hi, I'm Ramon Hernandez</h2>
+          <p>Front-End developer building responsive, accessible web applications with React, JavaScript, and Figma</p>
         </section>
         <section className="profile">
           <img className="home_image" src="https://i.imgur.com/QVW2YTb.jpg" alt="Ramon in White Nike hat and blue pullover" />
         </section>
         <div className="icon-scroll"></div>
+        <section className="swipe_down">
+        <p>Swipe Down</p>
       </section>
+      </section>
+      
       <section className="about">
         <img src="https://i.imgur.com/H9Xp25H.jpg" alt="Ramon swinging a golf club" />
         <section class="innerRect">
