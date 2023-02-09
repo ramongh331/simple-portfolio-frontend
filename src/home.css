@@ -239,9 +239,9 @@ body {
   margin: 0 auto;
 }
 
-.flex h3 {
+.flex > h3 {
   margin-top: 2rem;
-  font-size: 80px;
+  font-size: var(--fs-h3);
   align-self: flex-start;
 }
 
@@ -253,12 +253,12 @@ body {
 }
 
 .projectDiv {
-  width: 95%;
+  width: 100%;
   display: flex;
   margin: 2rem 0;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  /* background-color: aqua; */
 }
 
 .projectDiv .siteCover {
@@ -274,13 +274,28 @@ body {
 
 .projectInfo {
   text-align: right;
-  position: absolute;
-  width: 40rem;
-  right: 5rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* background-color: blue; */
 }
 
-.projectInfo h4 {
-  font-size: 30px;
+.projectInfo > h4 {
+  max-width: 30rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.techContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.techContainer > div {
+  font-size: 1.3rem;
+  margin: 0 2px;
 }
 
 .description {
@@ -298,14 +313,7 @@ img.ghBtn {
   width: 30px;
 }
 
-.techContainer {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.techContainer div {
-  margin: 0 2px;
-}
 
 /* ------------------------------ */
 /* ---------Icon Scroll---------- */
