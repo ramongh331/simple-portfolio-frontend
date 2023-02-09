@@ -9,50 +9,6 @@
   --fs-p-about: 2rem;
 }
 
-/* Responsive design for font-size */
-@media screen and (min-width: 1024px) and (max-width: 1280px){
-  :root{
-    --fs-h2: 4rem;
-    --fs-p-home: 1.7rem;
-    --fs-h3: 4.8rem;
-    --fs-p-about: 2rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 912px) {
-  :root{
-    --fs-h2: 4rem;
-    --fs-p-home: 1.8rem;
-    --fs-h3: 4.8rem;
-    --fs-p-about: 2rem;
-  }
-}
-
-@media screen and (width: 540px){
-  :root {
-    --fs-h2: 2.5rem;
-    --fs-p-home: 1.1rem;
-    --fs-h3: 1.5rem;
-    --fs-p-about: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  :root {
-    --fs-h2: 2.5rem;
-    --fs-p-home: 1.1rem;
-    --fs-h3: 1.5rem;
-    --fs-p-about: 1.1rem;
-  }
-}
-@media screen and (max-width: 280px) {
-  :root {
-    --fs-h2: 2rem;
-    --fs-h3: 1.5rem;
-    --fs-p-about: 1.1rem;
-  }
-}
-
 body {
   width: 100vw;
 }
@@ -498,6 +454,14 @@ img.ghBtn {
 
 /* Nest Hub and Nest Hub Max */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
+  :root{
+    --fs-h2: 4rem;
+    --fs-p-home: 1.7rem;
+    --fs-h3: 3rem;
+    --fs-p-about: 1.5rem;
+  }
+
+  /*  Home section */
   .home_body {
     width: 100%;
     display: flex;
@@ -532,10 +496,28 @@ img.ghBtn {
   .home_image {
     width: 70%;
   }
+
+  /* About section */
+  .innerRect > h3 {
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+  
+  .innerRect > p {
+    font-size: var(--fs-p-about);
+  }
 }
 
 /* Surface Pro 7 and iPads */
 @media screen and (min-width: 768px) and (max-width: 912px) {
+  :root{
+    --fs-h2: 4rem;
+    --fs-p-home: 1.8rem;
+    --fs-h3: 3rem;
+    --fs-p-about: 1.3rem;
+  }
+
+  /* Home section */
   .home_body {
     display: flex;
     flex-direction: column;
@@ -598,10 +580,33 @@ img.ghBtn {
       opacity: 1;
     }
   }
+
+  /* About section */
+  .about {
+    height: 50vh;
+  }
+  
+  .innerRect {
+    height: 92.5%;
+  }
+  
+  .innerRect > h3 {
+    margin: 0;
+  }
+
 }
 
 /* Surface Duo */
 @media screen and (width: 540px) {
+  :root {
+    --fs-h2: 2.5rem;
+    --fs-p-home: 1.1rem;
+    --fs-h3: 2.2rem;
+    --fs-p-about: .9rem;
+  }
+
+
+  /* Home section */
   .home_body {
     display: flex;
     flex-direction: column;
@@ -660,9 +665,39 @@ img.ghBtn {
       opacity: 1;
     }
   }
+
+  /* About Section */
+  .about {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--darkestBlue);
+    position: relative;
+  }
+  
+  .innerRect {
+    width: 96%;
+    height: 91%;
+    border: 1.2rem solid var(--lightGray);
+  }
+  
+  .innerRect > h3 {
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+  
+  .innerRect > p {
+    font-size: var(--fs-p-about);
+  }
 }
 
 @media screen and (max-width: 414px) {
+  :root {
+    --fs-h2: 2.5rem;
+    --fs-p-home: 1.1rem;
+    --fs-h3: 1.2rem;
+    --fs-p-about: .68rem;
+  }
+  
   /* Home Page */
   .home_body {
     display: flex;
@@ -725,26 +760,32 @@ img.ghBtn {
 
   /* About Page */
   .about {
-    height: 100vh;
+    height: 45vh;
   }
-
+  
   .innerRect {
-    border: 16px solid var(--lightGray);
-    width: 96%;
-    height: 92%;
-    top: 4%;
-    left: 2%;
-    padding: 2% 5%;
-    color: white;
+    height: 91%;
+    border: 1.2rem solid var(--lightGray);
   }
-
-  /* .innerRect p{
-    font-size: 10px
-  } */
+  
+  .innerRect > h3 {
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+  
+  .innerRect > p {
+    font-size: var(--fs-p-about);
+  }
 }
 
 /* Galaxy Fold */
 @media screen and (max-width: 280px) {
+  :root {
+    --fs-h2: 2rem;
+    --fs-h3: 1.2rem;
+    --fs-p-about: .57rem;
+  }
+  
   /* Home Page */
   .home_body {
     height: 93vh;
@@ -761,5 +802,25 @@ img.ghBtn {
   /* Swipe Down Indicator */
   .swipe_down {
     bottom: 7vh;
+  }
+
+   /* About Page */
+   .about {
+    height: 45vh;
+  }
+  
+  .innerRect {
+    height: 91%;
+    border: 1rem solid var(--lightGray);
+  }
+  
+  .innerRect > h3 {
+    font-size: var(--fs-h3);
+    margin: 0;
+  }
+  
+  .innerRect > p {
+    font-size: var(--fs-p-about);
+    margin-top: .2rem;
   }
 }
