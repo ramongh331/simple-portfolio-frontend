@@ -42,7 +42,7 @@ export default function Home(props) {
           </p>
         </section>
       </section>
-      {/* <section className="skillsPage">
+      <section className="skillsPage">
         <div className="topShadesContainer">
           <div className="shadeLine t-blue7"></div>
           <div className="shadeLine t-blue6"></div>
@@ -210,7 +210,7 @@ export default function Home(props) {
           <div className="shadeLine b-blue6"></div>
           <div className="shadeLine b-blue7"></div>
         </div>
-      </section> */}
+      </section>
       {/* <section className="projects">
         <section className="flex">
           <h3>Projects</h3>
