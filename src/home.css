@@ -19,8 +19,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 11rem;
-  height: 78vh;
+  margin-top: 7rem;
+  height: 90vh;
 }
 
 .heading {
