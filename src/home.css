@@ -303,14 +303,18 @@ body {
   color: white;
   padding: 1rem;
   line-height: 1.5rem;
-  font-size: 18px;
+  font-size: 1.4rem;
   text-align: left;
   box-shadow: 0px 13px 15px -5px rgba(0, 0, 0, 0.7);
   border-radius: 5px;
 }
 
 img.ghBtn {
-  width: 30px;
+  width: 2.3rem;
+  transition: .1s ease-in-out;
+}
+img.ghBtn:hover{
+  filter: invert(1);
 }
 
 
@@ -515,6 +519,34 @@ img.ghBtn {
   .innerRect > p {
     font-size: var(--fs-p-about);
   }
+
+  /* Projects Section */
+  .flex {
+    width: 90%;
+  }
+  .flex > h3{
+    font-size: var(--fs-h3);
+  }
+  
+  .projectDiv .siteCover {
+    width: 30rem;
+  }
+  
+  .projectInfo {
+    width: 60%;
+  }
+  
+  .projectInfo > h4 {
+    font-size: 2rem;
+  }
+  
+  .techContainer > div {
+    font-size: .7rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
 }
 
 /* Surface Pro 7 and iPads */
@@ -601,6 +633,34 @@ img.ghBtn {
   
   .innerRect > h3 {
     margin: 0;
+  }
+
+  /* Projects Section */
+  .flex > h3 {
+    font-size: var(--fs-h3);
+    margin-bottom: 0;
+  }
+  
+  .projectDiv {
+    flex-direction: column; 
+  }
+  
+  .projectDiv .siteCover {
+    width: 100%; 
+  }
+  
+  .projectInfo {
+    width: 100%;
+  }
+  
+  .projectInfo > h4 {
+    max-width: 100%; 
+    font-size: 2.5rem; 
+    margin-top: 1rem; 
+  }
+  
+  .techContainer > div {
+    font-size: 1.1rem;
   }
 
 }
@@ -696,6 +756,38 @@ img.ghBtn {
   
   .innerRect > p {
     font-size: var(--fs-p-about);
+  }
+
+   /* Projects Section */
+   .flex > h3 {
+    font-size: var(--fs-h3);
+    margin-bottom: 0;
+  }
+  
+  .projectDiv {
+    flex-direction: column; 
+  }
+  
+  .projectDiv .siteCover {
+    width: 100%; 
+  }
+  
+  .projectInfo {
+    width: 100%;
+  }
+  
+  .projectInfo > h4 {
+    max-width: 100%; 
+    font-size: 1.6rem; 
+    margin-top: 1rem; 
+  }
+  
+  .techContainer > div {
+    font-size: .7rem;
+  }
+
+  .description{
+    font-size: 1rem;
   }
 }
 
@@ -806,6 +898,46 @@ img.ghBtn {
   .skillCards > div > h4{
     text-align: center;
   }
+
+ /* Projects Section */
+ .flex > h3{
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+ .projectDiv {
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.projectDiv .siteCover {
+  width: 100%; 
+}
+
+.projectInfo {
+  width: 100%;
+}
+
+.projectInfo > h4 {
+  max-width: 100%; 
+  font-size: 1.1rem; 
+  margin-top: 1rem; 
+}
+
+.techContainer > div {
+  font-size: .45rem;
+}
+
+.description{
+  line-height: 1rem;
+  font-size: .7rem;
+}
+
+img.ghBtn{
+  width: 1.6rem;
+}
+
 }
 
 /* Galaxy Fold */
@@ -873,4 +1005,23 @@ img.ghBtn {
   .skillCards > div > h4{
     text-align: center;
   }
+
+  /* Projects Section */
+  .projIndex{
+    width: 95%; /*! */
+  }
+  
+  .projectInfo > h4 {
+    margin-bottom: .5rem; /*! */
+  }
+  
+  .description{
+    font-size: .5rem; /*! */
+    padding: .5rem; /*! */
+  }
+  
+  img.ghBtn{
+    width: 1.4rem; /*! */
+  }
+
 }
