@@ -464,6 +464,42 @@ img.ghBtn:hover{
   margin-right: 1rem;
 }
 
+/* 11 inch macbook air to 1920 */
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+  /* home section */
+  .home_body{
+    margin-top: 2rem;
+    height: 88vh;
+  }
+
+  /* Projects section */
+  .flex > h3{
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  
+  .projectDiv .siteCover{
+    width: 40rem;
+  }
+
+  .projectInfo > h4{
+    font-size: 2.2rem;
+  }
+
+  .techContainer > div{
+    font-size: .7rem;
+  }
+
+  .description{
+    font-size: 1rem;
+  }
+
+  /* Contact section */
+  .contact_comp > h2{
+    text-align: center;
+    margin-left: 0;
+  }
+}
 
 /* Nest Hub and Nest Hub Max */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
