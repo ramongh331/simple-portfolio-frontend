@@ -243,9 +243,9 @@ export default function Home(props) {
           </section>
         </section>
       </section>
-      {/* <section className="contact">
+      <section className="contact">
         <ContactUs/>
-      </section> */}
+      </section>
     </section>
   );
 }

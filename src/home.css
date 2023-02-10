@@ -547,6 +547,44 @@ img.ghBtn:hover{
   .description {
     font-size: 1rem;
   }
+
+  /* Contact Section */
+  .contact {
+    height: 50vh; 
+  }
+  
+  /* ------Contact Component------- */
+  
+  .contact_comp {
+    align-items: center; 
+  }
+  
+  .contact_comp > h2 {
+    font-size: 2.6rem; 
+    margin-left: 0; 
+  }
+  
+  .contact_info,
+  .form,
+  .contact_social {
+    width: 18rem; 
+  }
+  
+  .textarea {
+    height: 5rem;
+  }
+  
+  .contact_info p {
+    font-size: 1rem; 
+  }
+  
+  .contact_titles {
+    font-size: 1.9rem; 
+  }
+
+  #submit{
+    margin-bottom: 1rem;
+  }
 }
 
 /* Surface Pro 7 and iPads */
@@ -661,6 +699,52 @@ img.ghBtn:hover{
   
   .techContainer > div {
     font-size: 1.1rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    height: 25vh; 
+  }
+  
+  /* ------Contact Component------- */
+  
+  .contact_comp {
+    align-items: center; 
+  }
+  
+  .contact_comp > h2 {
+    font-size: 2.3rem; 
+    margin-left: 0; 
+  }
+  
+  .contact_info,
+  .form,
+  .contact_social {
+    width: 13rem; 
+  }
+  
+  .textarea {
+    height: 5rem;
+  }
+  
+  .contact_info p {
+    font-size: 1rem; 
+  }
+  
+  .contact_titles {
+    font-size: 1.7rem; 
+  }
+
+  .contact_input{
+    height: 2.3rem
+  }
+
+  .textarea{
+    height: 3.5rem;
+  }
+
+  #submit{
+    margin-bottom: 1rem;
   }
 
 }
@@ -788,6 +872,57 @@ img.ghBtn:hover{
 
   .description{
     font-size: 1rem;
+  }
+
+  /* Contact Section */
+  .contact {
+    height: 25vh; 
+  }
+  
+  /* ------Contact Component------- */
+  
+  .contact_comp {
+    align-items: center; 
+  }
+  
+  .contact_comp > h2 {
+    font-size: 2.3rem; 
+    margin-left: 0; 
+  }
+  
+  .contact_info,
+  .form,
+  .contact_social {
+    width: 10rem; 
+  }
+  
+  .textarea {
+    height: 5rem;
+  }
+  
+  .contact_info p {
+    font-size: .8rem; 
+  }
+  
+  .contact_titles {
+    font-size: 1rem; 
+  }
+
+  .contact_input{
+    font-size: .8rem;
+    height: 1.9rem
+  }
+
+  .textarea{
+    height: 3.5rem;
+  }
+
+  #submit{
+    margin-bottom: 1rem;
+  }
+
+  .contact_icons > a > img{
+    width: 1.8rem;
   }
 }
 
@@ -938,6 +1073,67 @@ img.ghBtn{
   width: 1.6rem;
 }
 
+/* Contact Section */
+.contact {
+  height: 76vh;
+}
+
+/* ------Contact Component------- */
+
+.contact_comp {
+  align-items: center; 
+}
+
+.contact_comp > h2 {
+  font-size: 1.8rem; 
+  margin-left: 0; 
+}
+
+.contact_bottom{
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_info,
+.form,
+.contact_social {
+  width: 15rem; 
+}
+
+.textarea {
+  height: 5rem;
+}
+
+.contact_info p {
+  font-size: .8rem; 
+}
+
+.contact_titles {
+  font-size: 1rem; 
+}
+
+.contact_input{
+  font-size: .8rem;
+  height: 1.5rem
+}
+
+.textarea{
+  height: 3.5rem;
+}
+
+#submit{
+  margin-bottom: 1rem;
+}
+
+.contact_icons{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contact_icons > a > img{
+  width: 1.5rem;
+}
+
 }
 
 /* Galaxy Fold */
@@ -1023,5 +1219,10 @@ img.ghBtn{
   img.ghBtn{
     width: 1.4rem; /*! */
   }
+
+/* Contact Section */
+.contact {
+  height: 80vh;
+}
 
 }
