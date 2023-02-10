@@ -9,7 +9,7 @@ export default function Home(props) {
   return (
     <section>
       
-      <section className="home_body">
+      <section className="home_body" id="home">
         <section className="heading">
           <h2>Hi, I'm Ramon Hernandez</h2>
           <p>Front-End developer building responsive, accessible web applications with React, JavaScript, and Figma</p>
@@ -23,7 +23,7 @@ export default function Home(props) {
       </section>
       </section>
       
-      <section className="about">
+      <section className="about" id="about">
         <img src="https://i.imgur.com/H9Xp25H.jpg" alt="Ramon swinging a golf club" />
         <section class="innerRect">
           <h3>About</h3>
@@ -42,7 +42,7 @@ export default function Home(props) {
           </p>
         </section>
       </section>
-      <section className="skillsPage">
+      <section className="skillsPage" id="skills">
         <div className="topShadesContainer">
           <div className="shadeLine t-blue7"></div>
           <div className="shadeLine t-blue6"></div>
@@ -52,7 +52,7 @@ export default function Home(props) {
           <div className="shadeLine t-blue2"></div>
           <div className="shadeLine t-white"></div>
         </div>
-        <article className="skillsContainer">
+        <article className="skillsContainer" id="skillsCont">
           <h3>Technical Skills</h3>
           <div className="skillCards">
             <div>
@@ -211,7 +211,7 @@ export default function Home(props) {
           <div className="shadeLine b-blue7"></div>
         </div>
       </section>
-      <section className="projects">
+      <section className="projects" id="projects">
         <section className="flex">
           <h3>Projects</h3>
           <section className="projIndex">
@@ -243,7 +243,7 @@ export default function Home(props) {
           </section>
         </section>
       </section>
-      <section className="contact">
+      <section className="contact" id="contact">
         <ContactUs/>
       </section>
     </section>
