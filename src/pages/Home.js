@@ -11,7 +11,7 @@ export default function Home(props) {
       
       <section className="home_body" id="home">
         <section className="heading">
-          <h2>Hi, I'm Ramon Hernandez</h2>
+          <h2>Hi, I'm Ramón Hernández</h2>
           <p>Front-End developer building responsive, accessible web applications with React, JavaScript, and Figma</p>
         </section>
         <section className="profile">
