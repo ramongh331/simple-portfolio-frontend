@@ -9,7 +9,7 @@ export default function Header (props) {
                 </a>
                 <section className="nav-hyperlinks">
                     <a href="https://docs.google.com/document/d/1wiw12XV2FYtoqgWUFv-xZNhvhHL64YuPXFUGZoH5kQk/edit?usp=sharing" target="_blank" rel="noreferrer">
-                        <h2>Resume</h2>
+                        <h2>Resumè</h2>
                     </a>
                     <a href="#about">
                         <h2>About</h2>

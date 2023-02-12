@@ -40,7 +40,7 @@ export const ContactUs = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <p>Resume</p>
+            <p>Resumè</p>
           </a>
         </section>
         <section className="form">
