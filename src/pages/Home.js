@@ -5,31 +5,40 @@ import { ContactUs } from "../components/Contact";
 
 export default function Home(props) {
   const projects = useLoaderData();
-// ! REMEMBER: the larger images and divs are going to mess with your mobile layout. Keep that in mind when working on responsiveness. 
+  // ! REMEMBER: the larger images and divs are going to mess with your mobile layout. Keep that in mind when working on responsiveness.
   return (
     <section>
-      
       <section className="home_body" id="home">
         <section className="heading">
           <h2>Hi, I'm Ramón Hernández</h2>
-          <p>Front-End developer building responsive, accessible web applications with React, JavaScript, and Figma</p>
+          <p>
+            Front-End developer building responsive, accessible web applications
+            with React, JavaScript, and Figma
+          </p>
         </section>
         <section className="profile">
-          <img className="home_image" src="https://i.imgur.com/QVW2YTb.jpg" alt="Ramon in White Nike hat and blue pullover" />
+          <img
+            className="home_image"
+            src="https://i.imgur.com/QVW2YTb.jpg"
+            alt="Ramon in White Nike hat and blue pullover"
+          />
         </section>
         <div className="icon-scroll"></div>
         <section className="swipe_down">
-        <p>Swipe Down</p>
+          <p>Swipe Down</p>
+        </section>
       </section>
-      </section>
-      
+
       <section className="about" id="about">
-        <img src="https://i.imgur.com/H9Xp25H.jpg" alt="Ramon swinging a golf club" />
+        <img
+          src="https://i.imgur.com/H9Xp25H.jpg"
+          alt="Ramon swinging a golf club"
+        />
         <section class="innerRect">
           <h3>About</h3>
           <p>
-            I am a creative Front-End Developer with a passion for and 5 years
-            of experience in technology and accessibility. My background in
+            I am a creative Front-End Developer with a passion for technology
+            and accessibility with 5 years of experience. My background in
             filmmaking, education, and computer science allows my creative and
             analytical traits to blend perfectly. I am adaptable to the
             technology I use. I am proficient in HTML, CSS (and Sass), and
@@ -244,7 +253,7 @@ export default function Home(props) {
         </section>
       </section>
       <section className="contact" id="contact">
-        <ContactUs/>
+        <ContactUs />
       </section>
     </section>
   );
